@@ -5,12 +5,12 @@
 
 Summary:	A libshape wrapper extension for php
 Name:		php-%{modname}
-Version:	0.9.1
-Release:	%mkrel 18
+Version:	0.9.2
+Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/shape
-Source0:	http://pecl.php.net/get/shape-%{version}.tar.bz2
+Source0:	http://pecl.php.net/get/shape-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libshapelib-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
