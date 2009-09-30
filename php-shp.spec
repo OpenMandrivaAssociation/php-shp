@@ -25,8 +25,10 @@ manipulating ESRI shapefiles.
 
 %build
 %serverbuild
+export CFLAGS="$CFLAGS -I%{_includedir}/libshp"
 
 phpize
+
 %configure2_5x --with-libdir=%{_lib} \
     --with-%{modname}=shared,%{_prefix}
 %make
