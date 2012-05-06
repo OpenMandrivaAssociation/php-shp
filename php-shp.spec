@@ -11,6 +11,7 @@ Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/shape
 Source0:	http://pecl.php.net/get/shape-%{version}.tgz
+Patch0:		shape-0.9.2-php54x.diff
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libshapelib-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -22,6 +23,7 @@ manipulating ESRI shapefiles.
 %prep
 
 %setup -q -n shape-%{version}
+%patch0 -p0
 
 %build
 %serverbuild
