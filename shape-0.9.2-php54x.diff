@@ -1,0 +1,11 @@
+--- shp.c	1970-01-01 10:13:08.000000000 +0100
++++ shp.c.oden	2012-05-06 11:31:02.848481733 +0200
+@@ -580,7 +580,7 @@ PHP_FUNCTION(shp_create_simple_object)
+  *
+  * Every user visible function must have an entry in shp_functions[].
+  */
+-function_entry shp_functions[] = {
++zend_function_entry shp_functions[] = {
+ 	PHP_FE(shp_get_info,		NULL)
+ 	PHP_FE(shp_close,			NULL)
+ 	PHP_FE(shp_compute_extents,	NULL)
