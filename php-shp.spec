@@ -9,7 +9,7 @@ Version:	0.9.2
 Release:	15
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/shape
+URL:		https://pecl.php.net/package/shape
 Source0:	http://pecl.php.net/get/shape-%{version}.tgz
 Patch0:		shape-0.9.2-php54x.diff
 BuildRequires:	php-devel >= 3:5.2.0
