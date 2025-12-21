@@ -12,6 +12,11 @@ License:	PHP License
 URL:		https://pecl.php.net/package/shape
 Source0:	http://pecl.php.net/get/shape-%{version}.tgz
 Patch0:		shape-0.9.2-php54x.diff
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libshapelib-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
